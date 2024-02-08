@@ -1,0 +1,42 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="table-container"></div>
+    <button onclick="openModal()">Add User</button>
+
+    <div id="addUserModal" class="modal">
+      <div class="modal-content">
+        <span onclick="closeModal()" style="float: right; cursor: pointer"
+          >&times;</span
+        >
+        <h2>Add User</h2>
+        <form id="addUserForm">
+          <input type="text" id="email" placeholder="Email" required /><br />
+          <input
+            type="text"
+            id="firstName"
+            placeholder="First Name"
+            required
+          /><br />
+          <input
+            type="text"
+            id="lastName"
+            placeholder="Last Name"
+            required
+          /><br />
+          <p id="statusInfo"></p>
+          <input type="submit" value="Add User" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
